@@ -3,7 +3,7 @@
 
 const botaoAlterarTema = document.getElementById("botao-alterar-tema");
 const body = document.querySelector("body");
-const imagemBotaoTrocaDeTema = document.querySelector("imagem-botao");
+const imagemBotaoTrocaDeTema = document.querySelector(".imagem-botao");
 
 botaoAlterarTema.addEventListener("click", () => {
 
@@ -11,13 +11,13 @@ botaoAlterarTema.addEventListener("click", () => {
 
     body.classList.toggle("modo-escuro");
 
-    if (modoEscuroEstaAtivo) {
+    console.log(imagemBotaoTrocaDeTema);
 
-        imagemBotaoTrocaDeTema.setAttribute("src", "./src/imagens/sun.png");
+    if (modoEscuroEstaAtivo) {
+        imagemBotaoTrocaDeTema.setAttribute("src", "/imagens/sun.png");
 
     } else {
-
-        botaoTrocaDeTema.setAttribute("index.html", "imagens/moon.png");
+        imagemBotaoTrocaDeTema.setAttribute("src", "/imagens/moon.png");
     }
 });
 
